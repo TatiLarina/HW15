@@ -1,4 +1,4 @@
-package ru.netology.aviatikets;
+package ru.netology.aviatickets;
 
 public class NegativeIdException extends RuntimeException {
 

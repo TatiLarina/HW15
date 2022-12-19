@@ -1,4 +1,6 @@
-package ru.netology.aviatikets;
+package ru.netology.aviatickets;
+
+import java.util.Arrays;
 
 import static java.util.regex.Pattern.matches;
 
@@ -7,6 +9,15 @@ public class TicketManager {
 
     public TicketManager(TicketRepository repo) {
         this.repo = repo;
+    }
+
+    public void add(Ticket ticket) {
+        repo.save(ticket);
+    }
+
+    public Ticket[] getTickets() {
+        Arrays.sort(repo.getTickets());
+        return repo.getTickets();
     }
 
     public Ticket[] findAll(String from, String to) {
@@ -23,6 +34,14 @@ public class TicketManager {
                 }
             }
         }
+
+        if (result.length == 0) {
+            throw new NegativeIdException(
+                    "Билеты по данному направлению отсутствуют"
+            );
+        }
+
+        Arrays.sort(result);
         return result;
     }
 }
