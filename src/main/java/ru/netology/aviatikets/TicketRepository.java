@@ -14,15 +14,31 @@ public class TicketRepository {
     }
 
     public void removeById(int id) {
-        Ticket[] tmp = new Ticket[tickets.length - 1];
-        int copyToIndex = 0;
+        if (id < 0) {
+            throw new NegativeIdException(
+                    "ID не может быть отрицательным: " + id
+            );
+        }
+
+        boolean right = false;
         for (Ticket ticket : tickets) {
-            if (ticket.getID() != id) {
-                tmp[copyToIndex] = ticket;
-                copyToIndex++;
+            if (ticket.getID() == id) {
+                right = true;
+                break;
             }
         }
-        tickets = tmp;
+
+        if (right) {
+            Ticket[] tmp = new Ticket[tickets.length - 1];
+            int copyToIndex = 0;
+            for (Ticket ticket : tickets) {
+                if (ticket.getID() != id) {
+                    tmp[copyToIndex] = ticket;
+                    copyToIndex++;
+                }
+            }
+            tickets = tmp;
+        }
     }
 
     public Ticket[] getTickets() {

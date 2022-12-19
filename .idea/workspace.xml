@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f3230d-0c25-4c98-8b10-fca888887b34" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/aviatikets/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/aviatikets/TicketManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/aviatikets/TicketRepository.java" afterDir="false" />
+    <list default="true" id="c8f3230d-0c25-4c98-8b10-fca888887b34" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/aviatikets/NegativeIdException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/aviatikets/TicketRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/aviatikets/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/aviatikets/TicketRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +40,84 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/jerrymurr/IdeaProjects/HW15/src/main/java",
+    "last_directory_selection": "C:/Users/jerrymurr/IdeaProjects/HW15/src/test/java",
     "last_opened_file_path": "C:/Users/jerrymurr/IdeaProjects/HW13"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.TicketRepositoryTest.removeNegativeID">
+    <configuration name="TicketRepositoryTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW15" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.aviatikets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.aviatikets" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.aviatikets.TicketRepositoryTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketRepositoryTest.removeNegativeID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW15" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.aviatikets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.aviatikets" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.aviatikets.TicketRepositoryTest" />
+      <option name="METHOD_NAME" value="removeNegativeID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketRepositoryTest.removeNonexistentID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW15" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.aviatikets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.aviatikets" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.aviatikets.TicketRepositoryTest" />
+      <option name="METHOD_NAME" value="removeNonexistentID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketRepositoryTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW15" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.aviatikets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.aviatikets" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.aviatikets.TicketRepositoryTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TicketRepositoryTest.removeNegativeID" />
+        <item itemvalue="JUnit.TicketRepositoryTest.removeNonexistentID" />
+        <item itemvalue="JUnit.TicketRepositoryTest.remove" />
+        <item itemvalue="JUnit.TicketRepositoryTest.save" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671446596743</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit">
+      <created>1671450063291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671450063291</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>
